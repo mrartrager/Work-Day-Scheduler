@@ -32,10 +32,16 @@
       </p>
       <p id="currentDay" class="lead"></p>
     </header>
-<!--make sure to format classes in bootstrap-->
+<!--MAKE SURE TO USE BOOTSTRAP FOR CLASSES-->
       <!-- Timeblocks go here -->
-      <div>
-        <h1>8 AM</h1>
+      <div class="container">
+
+      <div id="8A" class="row time-block">
+        <h1 class="col-sm-1 hour">8 AM</h1>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="col-sm-1 saveBtn btn">
+          <i class="far fa-save fa-lg"></i>
+        </button>
       </div>
 
       <div>
@@ -102,7 +108,7 @@
         <h1>12 AM</h1>
       </div>
 
-    </div>
+  </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
