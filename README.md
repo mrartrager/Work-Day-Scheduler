@@ -1,99 +1,31 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
+## Desciption 
+  This work day scheduler was a lot of fun to make! I definitely learned a lot while doing this one. On the side I started developing a calendar web app and I'm going to have it so when you click on a date a work day scheduler similar to this one pops up, i'm excited to develop that further. The work day Scheduler here displays the day that it is at the top using a third party api called moment.JS, That date refreshes at midnight to the next day automatically, that's pretty awesome. I didn't go all out with the design elements as I usually do, saving that for the big calendar app I'm making that I mentioned earlier but the functionality meets all the requirements. The trickiest part of this project was getting the local storage to save after refreshing. The same issue I was having with my code quiz, but I was able to get it here! And not only that, but how I originally wrote the code was 10 lines of code, each hour was written out individually like "  $('#8 .description').val(localStorage.getItem('8'))" which took up a bunch of lines, but it worked. After looking it over and some advice from a tutor I was actually just able to write a for loop that did the same thing but only had it take up 2 lines of code, and figuring that out for me, was a big win!
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
-
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+## Installation
+ 
+N/A
+ 
+## Usage
+The usage of the work day scheduler is very easy. Log what you want to accomplish or have going on in a certain hour block and hit the save button. Boom all done. There are some other attributes to the page that make the entire thing a little more cohesive for example: Once the hour enters a new hour (8am turns to 9am) the 8am section of the scheduler will turn gray, while the active hour is in red, and the hours to come are in green. This format was predetermined for us to use but I do like the idea behind a visual representation of time passing that is not a clock.
 
 
-## Grading Requirements
+## Credits 
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
+# Here is a link to the deployed application:
 
-* Satisfies all of the above acceptance criteria plus the following:
+https://mrartrager.github.io/Work-Day-Scheduler/
 
-  * Uses a date utility library to work with date and time
 
-### Deployment: 32%
+# Here is a link to the GitHub Repository: 
 
-* Application deployed at live URL
+https://github.com/mrartrager/Work-Day-Scheduler 
 
-* Application loads with no errors
+# Here is a screenshot of the Work Day Scheduler: 
+Unfortunately I didnt get a screenshot of the program earlier than 5 so you could see the color changes throughout the day. 
 
-* Application GitHub URL submitted
 
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![](../../Downloads/127.0.0.1_5500_index.html.png)

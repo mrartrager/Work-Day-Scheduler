@@ -1,6 +1,5 @@
-
-
 $(document).ready(function () {
+
   // moment JS used to update the date everyday to current date
   let todayDate = moment().format("dddd, MMM Do YYYY");
   $("#currentDay").html(todayDate);
@@ -13,7 +12,6 @@ $(document).ready(function () {
 
 
       // if statment used for color change throughout the day 
-
       if (timeBlockHour < currentHour) {
         $(this).addClass("past");
       } else if (timeBlockHour === currentHour) {
@@ -26,7 +24,6 @@ $(document).ready(function () {
       }
 
       // saves local storage 
-
       $(".saveBtn").on("click", function () {
         console.log("saveBtn");
         let time = $(this).parent().attr("id");
@@ -39,7 +36,6 @@ $(document).ready(function () {
   timeBlockUpdater();
 
 // for loop for local storage 
-
 for (let i = 8; i<=17; i++){
   $(`#${i} .description`).val(localStorage.getItem(`${i}`));
 }
